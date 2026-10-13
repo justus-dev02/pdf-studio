@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --glass: rgba(255,255,255,0.6);
+    --glass-dark: rgba(24,24,27,0.6);
+    --backdrop: blur(16px) saturate(120%);
+}
+
+.glass {
+    background: var(--glass);
+    backdrop-filter: var(--backdrop);
+}
+.glass-dark {
+    background: var(--glass-dark);
+    backdrop-filter: var(--backdrop);
+}
+.scrollbar-thin::-webkit-scrollbar { height: 8px; width: 8px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: #a3a3a3; border-radius: 9999px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+
+.pdf-text-layer {
+    pointer-events: auto;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.pdf-text-layer ::selection {
+    background: rgba(59, 130, 246, 0.3);
+}

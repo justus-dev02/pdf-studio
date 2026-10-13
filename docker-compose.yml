@@ -1,0 +1,10 @@
+services:
+  pdf-studio:
+    build: .
+    image: pdf-studio:local
+    ports:
+      - "8080:8080"
+    read_only: true
+    tmpfs:
+      - /tmp
+    restart: unless-stopped

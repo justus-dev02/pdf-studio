@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Test artifacts
+coverage/
+test-results/
+playwright-report/
+blob-report/
+
+# Tauri / Rust
+# Cargo.lock is committed on purpose: this is an application, builds must be reproducible.
+src-tauri/target/
+src-tauri/gen/schemas/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs and caches
+*.log
+npm-debug.log*
+.eslintcache
+.vite/
+vite.config.*.timestamp-*
+
+# Editors and OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+.DS_Store
+Thumbs.db

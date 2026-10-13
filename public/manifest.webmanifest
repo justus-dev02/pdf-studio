@@ -1,0 +1,11 @@
+{
+  "name": "PDF Studio",
+  "short_name": "PDF Studio",
+  "description": "Local PDF editor: annotate, reorder, search and analyze PDFs in the browser.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#111827",
+  "background_color": "#fafafa",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

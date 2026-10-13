@@ -1,0 +1,13 @@
+export { PdfError, isPdfError, isCancelled } from './errors'
+export type { PdfErrorCode } from './errors'
+export { openPdfSource, releasePdfSource, releaseAllPdfSources } from './sources'
+export { getSource, hasSource } from './sourceRegistry'
+export { renderPage, blankPageSize } from './render'
+export type { PageSize, RenderOptions } from './render'
+export { getPageText, extractDocumentText, boxesInRange } from './text'
+export type { PageText, PdfTextItem, DocumentPageText } from './text'
+// exportPdf is intentionally not re-exported: it pulls in pdf-lib (~180 kB gzip) and is loaded on demand.
+export { pdfToMarkdown } from './markdown'
+export type { MarkdownResult } from './markdown'
+export { detectFormFields } from './formFields'
+export type { DetectedFormField } from './formFields'
